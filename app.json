@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "konnectx",
+    "slug": "konnectx",
+    "version": "1.0.0",
+    "scheme": "konnectx",
+    "orientation": "portrait",
+    "icon": "./assets/logname.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/logname.png"
+      }
+    },
+    "web": {
+      "favicon": "./assets/logo.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow KonnectX to access your photos so you can add a profile picture.",
+          "cameraPermission": "Allow KonnectX to use your camera so you can take a profile picture.",
+          "microphonePermission": false
+        }
+      ]
+    ],
+    "extra": {
+      "apiUrl": "http://localhost:4000"
+    }
+  }
+}
